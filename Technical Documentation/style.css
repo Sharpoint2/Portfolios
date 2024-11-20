@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex; /* Allow positioning of navbar and main content */
+  }
+  
+  nav#navbar {
+    width: 200px; /* Set width of navigation bar */
+    padding: 20px;
+    background-color: #f0f0f0;
+    position: relative; /* Fix navbar to the side */
+    top: 0;
+    bottom: 0;
+    left: 0; /* Position on left side */
+  }
+  
+  nav header {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav-link:hover {
+    background-color: #e0e0e0;
+  }
+  
+  main#main-doc {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+  }
+  
+  .main-section {
+    margin-bottom: 20px;
+  }
+  
+  .main-section header {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  p, code {
+    margin-bottom: 5px;
+  }
+  
+  /* Media query for smaller screens (adjust breakpoint as needed) */
+  @media (max-width: 768px) {
+    nav#navbar {
+      position: static; /* Remove fixed positioning on smaller screens */
+      width: 100%; /* Take up full width */
+    }
+  
+    main#main-doc {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
